@@ -25,6 +25,9 @@ namespace LoanManagement.Backend.Controllers
                 CreditRequest request = new CreditRequest();
                 newRequest = request;
 
+                db.CreditRequest.Add(newRequest);
+                db.SaveChanges();
+
                 response = new { Error = false };
                 return Request.CreateResponse(HttpStatusCode.OK, request, Configuration.Formatters.JsonFormatter);
             }

@@ -38,7 +38,7 @@ namespace LoanManagement.Backend.Controllers
             }
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("SearchClient")]
         public HttpResponseMessage SearchClient(int docNumber)
         {
