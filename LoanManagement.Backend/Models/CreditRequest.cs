@@ -26,8 +26,9 @@ namespace LoanManagement.Backend.Models
 
         [Required]
         public int ClientId { get; set; }
-        public virtual BankClient Client { get; set; }        
+        public virtual BankClient Client { get; set; }
 
+        [StringLength(20)]
         public string CreditStatus { get; set; }
 
         public int CreditAmount { get; set; }

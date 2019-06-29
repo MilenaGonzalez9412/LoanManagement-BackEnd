@@ -23,18 +23,18 @@ namespace LoanManagement.Backend.Controllers
             try
             {
                 CreditRequest request = new CreditRequest();
-                newRequest = request;
+                request = newRequest;
 
-                db.CreditRequest.Add(newRequest);
+                db.CreditRequest.Add(request);
                 db.SaveChanges();
 
                 response = new { Error = false };
                 return Request.CreateResponse(HttpStatusCode.OK, request, Configuration.Formatters.JsonFormatter);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 response = new { Error = true };
-                return Request.CreateResponse(HttpStatusCode.OK, response, Configuration.Formatters.JsonFormatter);
+                return Request.CreateResponse(HttpStatusCode.OK, ex, Configuration.Formatters.JsonFormatter);
             }
         }
     }

@@ -159,6 +159,10 @@
     <Compile Include="Migrations\201906282105147_CreditRequest.Designer.cs">
       <DependentUpon>201906282105147_CreditRequest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906290321181_CreditRequest1.cs" />
+    <Compile Include="Migrations\201906290321181_CreditRequest1.Designer.cs">
+      <DependentUpon>201906290321181_CreditRequest1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BankClient.cs" />
     <Compile Include="Models\CreditRequest.cs" />
@@ -189,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906282105147_CreditRequest.resx">
       <DependentUpon>201906282105147_CreditRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906290321181_CreditRequest1.resx">
+      <DependentUpon>201906290321181_CreditRequest1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
